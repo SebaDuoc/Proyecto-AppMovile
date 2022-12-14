@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      
+     Codigo QR para Asistencia.
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="inicioprofesor"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+
+  <ion-card class = "ion-text-center">
+    <ion-card-content>
+      <qrcode [qrdata]="listado.codigo" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <ion-card  *ngFor="let datos of datos">
+    <ion-chip>
+      <ion-avatar>
+      </ion-avatar>
+      <ion-label>{{datos.profesor}}</ion-label>
+    </ion-chip>
+    <ion-card-header>
+      <ion-card-title>{{datos.asignatura}}</ion-card-title>
+    </ion-card-header>    
+    <ion-card-content>
+      {{datos.seccion}}
+    </ion-card-content>
+  </ion-card>
+    
+</ion-content>

@@ -1,0 +1,139 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Ana",
+      "apellido": "Rios",
+      "contrasena": "555",
+      "username": "Anarios",
+      "tipo": "Profesor"
+    },
+    {
+      "id": 2,
+      "nombre": "Jose",
+      "apellido": "Diaz",
+      "contrasena": "147",
+      "username": "Josediaz",
+      "tipo": "Alumno"
+    },
+    {
+      "id": 3,
+      "nombre": "Cristiano",
+      "apellido": "Ronaldo",
+      "contrasena": "1234",
+      "username": "elbicho",
+      "tipo": "Alumno"
+    }
+  ],
+  "asignaturas": [
+    {
+      "id": 1,
+      "nombre": "Programacion de aplicaciones moviles"
+    },
+    {
+      "id": 2,
+      "nombre": "Arquitectura"
+    },
+    {
+      "id": 3,
+      "nombre": "Ingles"
+    }
+  ],
+  "asistencias": [
+    {
+      "id": 1,
+      "idUsuario": 3,
+      "idAsignaturas": 1,
+      "nombreAsignatura": "Programacion de aplicaciones moviles",
+      "seccion": "004D",
+      "date": "04-12-2022, 15:26:39"
+    },
+    {
+      "id": 2,
+      "idUsuario": 3,
+      "idAsignaturas": 2,
+      "nombreAsignatura": "Arquitectura",
+      "seccion": "003D",
+      "date": "04-12-2022, 15:26:39"
+    },
+    {
+      "id": 3,
+      "idUsuario": 3,
+      "idAsignaturas": 3,
+      "nombreAsignatura": "Ingles",
+      "seccion": "006D",
+      "date": "04-12-2022, 15:26:39"
+    },
+    {
+      "id": 4,
+      "idUsuario": 2,
+      "idAsignaturas": 3,
+      "nombreAsignatura": "Ingles",
+      "seccion": "006D",
+      "date": "04-12-2022, 15:26:39"
+    },
+    {
+      "idUsuario": 3,
+      "idAsignaturas": 1,
+      "nombreAsignatura": "Programacion de aplicaciones moviles",
+      "seccion": "004D",
+      "date": "11-12-2022, 21:17:41",
+      "id": 5
+    }
+  ],
+  "secciones": [
+    {
+      "id": 1,
+      "idAsignatura": 1,
+      "idUsuario": 1,
+      "seccion": "004D",
+      "asignatura": "Programacion de aplicaciones moviles",
+      "profesor": "Ana Rios",
+      "codigo": "HSK125"
+    },
+    {
+      "id": 2,
+      "idAsignatura": 1,
+      "idUsuario": 1,
+      "seccion": "005D",
+      "asignatura": "Programacion de aplicaciones moviles",
+      "profesor": "Ana Rios",
+      "codigo": "BF109"
+    },
+    {
+      "id": 3,
+      "idAsignatura": 1,
+      "idUsuario": 1,
+      "seccion": "006D",
+      "asignatura": "Programacion de aplicaciones moviles",
+      "profesor": "Ana Rios",
+      "codigo": "LNCNM545"
+    },
+    {
+      "id": 4,
+      "idAsignatura": 2,
+      "idUsuario": 4,
+      "seccion": "007D",
+      "asignatura": "Arquitectura",
+      "profesor": "Jose Gonzalez",
+      "codigo": "PD51D"
+    },
+    {
+      "id": 5,
+      "idAsignatura": 3,
+      "idUsuario": 5,
+      "seccion": "009D",
+      "asignatura": "Ingles",
+      "profesor": "Poliedro Sanchez",
+      "codigo": "PGMELPRO"
+    }
+  ],
+  "profesores": [
+    {
+      "idUsuario": 1,
+      "username": "Anarios",
+      "id": 1,
+      "Asignatura": "Programacion"
+    }
+  ]
+}

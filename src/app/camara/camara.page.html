@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Registrar Asistencia
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="inicio"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content ion-padding>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{nombreAsignatura}}</ion-card-title>
+      <ion-card-subtitle><h2>{{codigoSeccion}}</h2></ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Profesor: {{nombreProfesor}}
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-label position="stacked"><h1>Ingrese el Codigo:</h1></ion-label>
+    <ion-input id="codigo" [(ngModel)]="codigo" type="password" value="codigo" name="codigo"  placeholder="***"></ion-input>
+  </ion-item>
+  <ion-button (click)="postNuevaAsistencia()" color="warning" expand="block" shape="round">
+    <ion-icon name="checkmark-circle-outline"></ion-icon>
+     ASISTENCIA
+  </ion-button>
+
+  <ion-button expand="block" class="ion-margin" (click)="startScan()">
+    Escanear Codigo QR
+</ion-button>
+
+<ion-item *ngIf="scannedResult">
+  <ion-label class="ion-text-wrap">Resultado Escaneado: {{scannedResult}}</ion-label>
+</ion-item>
+</ion-content>
